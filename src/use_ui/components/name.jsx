@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+// import ImmutablePropTypes from 'react-immutable-proptypes';
 function Name({ text, ChangeName }) {
     function change() {
         ChangeName();

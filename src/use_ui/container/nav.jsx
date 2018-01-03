@@ -6,7 +6,8 @@ import Nav from '../components/nav';
 
 const mapStateToProps = (state, props) => {
     return {
-        status: state.status
+        // status: state.status
+        status: state.get('status'),
     }
 }
 

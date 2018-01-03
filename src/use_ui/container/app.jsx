@@ -4,7 +4,8 @@ import { withRouter } from 'react-router-dom';
 import App from '../components/app';
 const mapStateToProps = (state, props) => {
     return {
-        status: state.status,
+        // status: state.status,
+        status: state.get('status'),
         // is_show: state.status,
     }
 }

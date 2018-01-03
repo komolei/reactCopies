@@ -3,7 +3,14 @@ import React from 'react'
 import 'babel-polyfill';
 import './scss/index.scss';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
+// import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
+
+// immutable
+import { createStore, applyMiddleware, compose } from 'redux';
+import { combineReducers } from 'redux-immutable';
+import Immutable from 'immutable';
+const initialState = Immutable.Map();
+
 import { reducer } from './reducers/reducer';
 import ReduxThunk from 'redux-thunk';
 // import { Router, Route, browserHistory } from 'react-router';
@@ -27,7 +34,7 @@ const composeEnhancers = typeof window === 'object' &&
 const enhancer = composeEnhancers(
     applyMiddleware(routerMiddleware(middleware)),
 );
-const initStore = createStore(reducer1, enhancer);
+const initStore = createStore(reducer1, initialState, enhancer);
 
 // const history=syncHistoryWithStore(browserHistory,initStore);
 

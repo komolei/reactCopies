@@ -1,7 +1,7 @@
 // const store = {
 //     content: '',
 //     is_visible: true,
-//     data: [],
+//     data: [], //index 消息
 //     tab: '',
 //     topic_info: {}, //话题信息
 //     user_info: {}, //用户的信息

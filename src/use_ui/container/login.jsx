@@ -5,8 +5,11 @@ import { user_login, changeStatus } from '../actions/action';
 import { withRouter } from 'react-router';
 const mapStateToProps = (state, props) => {
     return {
-        name: state.userInfo.loginname,
+        // name: state.userInfo.loginname,
+        // router_index: '',
+        name: state.get('userInfo').loginname,
         router_index: '',
+
     }
 }
 const mapDispatchToProps = (dispatch, props) => {

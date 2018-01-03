@@ -4,7 +4,7 @@ const devConfig = {
     devServer: {
         contentBase: path.join(process.cwd(), "sample"),
         compress: true,
-        port: 300,
+        port: 3000,
     },
 }
 const baseConfig = require('./base.config');

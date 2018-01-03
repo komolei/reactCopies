@@ -14,3 +14,11 @@ export const user_login = (text) => ({ type: AT.USER_LOGIN, user_info: text });
 export const user_logon = (text) => ({ type: AT.USER_LOGON, user_info: text });
 
 export const user_logout = () => ({ type: AT.USER_LOGOUT, user_info: {} })
+
+// INDEX INFO
+export const index_info = (text) => ({
+    type: AT.INDEX_INFO,
+    index_info: text,
+})
+
+// export const index_info_refresh = text => ({ type: AT.INDEX_INFO_REFRESH, index_info: text });

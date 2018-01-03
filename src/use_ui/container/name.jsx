@@ -6,7 +6,8 @@ import axios from 'axios';
 const mapStateToProps = (state, props) => {
     return {
         // text: state.people.name,
-        text:'cccc'
+        // text:'cccc'
+        text: state.get('people').name,
     }
 }
 

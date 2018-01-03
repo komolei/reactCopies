@@ -9,6 +9,7 @@ import {
 import Name from '../container/name';
 import Login from '../container/login';
 import Logon from '../container/logon';
+import Page from '../container/page';
 export default class Nav extends React.Component {
     constructor(status, name, props) {
         super(props);
@@ -79,7 +80,7 @@ export default class Nav extends React.Component {
                     </Transition>
                 </Link>
                 <Switch>
-                    <Route exact path="/"></Route>
+                    <Route exact path="/" component={Page}></Route>
                     <Route exact path={`/logIn`} component={Login}></Route>
                     <Route exact path="/logOn" component={Logon}></Route>
                 </Switch>

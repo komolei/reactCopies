@@ -11,7 +11,8 @@ import {
 } from 'react-router-dom';
 const mapStateToProps = (state, props) => {
     return {
-        name: state.userInfo.loginname,
+        // name: state.userInfo.loginname,
+        name: state.get('userInfo').loginname
     }
 }
 const mapDispatchToProps = (dispatch, props) => {
