@@ -5353,9 +5353,15 @@ semantic-ui-css@^2.2.12:
   dependencies:
     jquery x.*
 
+<<<<<<< HEAD
 semantic-ui-react@^0.77.2:
   version "0.77.2"
   resolved "http://registry.npm.taobao.org/semantic-ui-react/download/semantic-ui-react-0.77.2.tgz#c4cf0e3cd5590c906f4d655d163ac5969acd359b"
+=======
+semantic-ui-react@^0.77.1:
+  version "0.77.1"
+  resolved "http://registry.npm.taobao.org/semantic-ui-react/download/semantic-ui-react-0.77.1.tgz#38d4009cc8c7c20efac6ad8ba4497de3bb3287e2"
+>>>>>>> 2156e917fe9c0f6cb16528a8509bcbdadd5a4bf4
   dependencies:
     babel-runtime "^6.25.0"
     classnames "^2.2.5"
