@@ -8,6 +8,12 @@ module.exports = {
     // community: './use_ui/app.js',
 
     community: './use_ui/index.js',
+    // rxjs:'./rxjs/index.js',
+    // rxjs: './rxjshome/test2.js',
+    // rxjs: './rxjshome/subject.js',
+    rxjs: './rxjshome/scheduler.js',
+
+
 
     // list: "./app/list.js",
     // module1: './app/module1.js',

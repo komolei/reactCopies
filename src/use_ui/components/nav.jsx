@@ -7,6 +7,8 @@ import {
 } from 'react-router-dom'
 // import Name from '../container/name'
 import Name from '../container/name';
+import Rxjs from '../components/rxjs';
+import Drag from '../components/drag';
 import Login from '../container/login';
 import Logon from '../container/logon';
 import Page from '../container/page';
@@ -30,6 +32,18 @@ export default class Nav extends React.Component {
                 <Menu >
                     <Link to={`${match.url}`}>
                         <Button content='Index' basic color='teal'></Button>
+                    </Link>
+                    <Link to="/name">
+                        <Transition visible={!status} animation='scale' duration={500}>
+                            <Button animated basic color='teal'>
+                                <Button.Content visible>
+                                    name
+                            </Button.Content>
+                                <Button.Content hidden>
+                                    <Icon name='sign in' />
+                                </Button.Content>
+                            </Button>
+                        </Transition>
                     </Link>
                     <Link to="/logIn">
                         <Transition visible={!status} animation='scale' duration={500}>
@@ -83,7 +97,9 @@ export default class Nav extends React.Component {
                 </Menu >
 
                 <Switch>
-                    <Route exact path="/" component={Page}></Route>
+                    {/* <Route exact path="/" component={Page}></Route> */}
+                    <Route exact path="/" component={Drag}></Route>
+                    <Route exact path={`/name`} component={Rxjs}></Route>
                     <Route exact path={`/logIn`} component={Login}></Route>
                     <Route exact path="/logOn" component={Logon}></Route>
                 </Switch>

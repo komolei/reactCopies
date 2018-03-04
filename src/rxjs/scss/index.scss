@@ -1,0 +1,40 @@
+
+$col:blue;
+.container{
+    display: none;
+}
+div{
+    border: 1px solid red;
+    text-align: center;
+    color: $col;
+    position: relative;
+}
+.content{
+    width:200px;
+    height: 40px;
+    line-height: 40px;
+    border: 10px solid red;
+    // margin:20px auto;
+    position: absolute;
+    cursor: all-scroll;
+}
+
+.tvContainer{
+    height:1500px;
+    background: black;
+    position: relative;
+    margin: 0 auto;
+    .tvBox{
+        max-width: 1200px;
+        min-height: 300px;
+        background: red;
+        margin: 0 auto;
+        cursor: all-scroll;
+    }
+}
+.changeTvBox{
+    position: fixed;
+    z-index: 22;
+    right:20px;
+    bottom: -20px;
+}
